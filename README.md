@@ -6,6 +6,13 @@ A Ruby command-line app to search and detect duplicate clients from a JSON datas
 
 ## Setup & Usage
 
+
+### 0. Prerequisites
+
+```bash
+ruby 3.3.1
+```
+
 ### 1. Install dependencies
 
 ```bash
@@ -71,6 +78,10 @@ Test coverage includes:
 - ✅ No matches
 - ✅ No duplicates
 - ✅ Invalid field search (negative case)
+- ✅ Search by name from remote JSON
+- ✅ Printing duplicate emails
+- ✅ Load clients from the default URL
+- ✅ Gracefully handles bad URLs
 
 ---
 
