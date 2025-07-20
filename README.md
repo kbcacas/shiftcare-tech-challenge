@@ -42,9 +42,7 @@ chmod +x bin/shiftcare
 
 - The remote client dataset is loaded from:
   `https://appassets02.shiftcare.com/manual/clients.json`
-- If `file=...` is passed, we load from disk instead (no gems, just native Ruby).
 - Searching is case-insensitive and partial (`"john"` matches `"John Doe"` and `"Johnny"`).
-- No dependencies like `optparse` or `httparty` used — parsing is manual for CLI, and HTTP uses `Net::HTTP`.
 
 ---
 
@@ -52,7 +50,6 @@ chmod +x bin/shiftcare
 
 - Only fields directly on the JSON hash (like `full_name`, `email`) are supported.
 - No pagination — all results are printed to STDOUT.
-- Crashes if field does not exist on the object (`field=whatever` with typo).
 - Doesn’t validate schema or detect corrupted JSON.
 - Could add fuzzy matching or regex-based queries.
 - No caching: every remote URL request is live.
