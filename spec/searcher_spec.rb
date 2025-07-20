@@ -40,3 +40,6 @@ RSpec.describe ShiftCare::Searcher do
       unique_clients = clients.select { |c| c.email != 'john@example.com' }
       result = described_class.find_duplicate_emails(unique_clients)
       expect(result).to be
+    end
+  end
+end
