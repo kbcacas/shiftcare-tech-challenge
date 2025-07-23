@@ -22,7 +22,7 @@ bundle install
 ### 2. Make CLI executable (optional)
 
 ```bash
-chmod +x bin/shiftcare
+chmod +x bin/shiftcare-tech-challenge
 ```
 
 ### 3. Run commands
@@ -30,13 +30,13 @@ chmod +x bin/shiftcare
 #### Search clients by name (default)
 
 ```bash
-./bin/shiftcare search john
+./bin/shiftcare-tech-challenge search john
 ```
 
 #### Find duplicate emails
 
 ```bash
-./bin/shiftcare duplicates
+./bin/shiftcare-tech-challenge duplicates
 ```
 
 ---
